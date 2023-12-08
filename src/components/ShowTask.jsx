@@ -29,15 +29,15 @@ function ShowTask({taskList, setTasks, task, setTask}) {
         </div>
         
         <ul>
-            {taskList?.map((task)=>( 
+            {taskList?.map((todo)=>( 
                 
-            <li key={task.id}>
+            <li key={todo.id}>
                 <p>
-                    <span className='name'>{task.name}</span>
-                    <span className='time'>{task.time}</span>
+                    <span className='name'>{todo.name}</span>
+                    <span className='time'>{todo.time}</span>
                 </p>
-                <button className='bi bi-pencil-square' onClick={() => handleEdit(task.id)}>Edit</button>
-                <button className='bi bi-trash' onClick={() => handleDelete(task.id)}>Delete</button>
+                <button className='bi bi-pencil-square' onClick={() => handleEdit(todo.id)}>Edit</button>
+                <button className='bi bi-trash' onClick={() => handleDelete(todo.id)}>Delete</button>
 
             </li>
             ))}

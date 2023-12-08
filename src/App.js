@@ -6,7 +6,7 @@ import ShowTask from './components/ShowTask';
 
 function App() {
   const[taskList, setTasks] = useState([]);
-  const[task, setTask] = useState();
+  const[task, setTask] = useState({});
   return (
     <div className="App">
         <Header/>
